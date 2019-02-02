@@ -3209,34 +3209,6 @@ channel.guild.owner.send(`<@!${channelremover.id}>
 
 
 
-client.on('channelDelete', (u) => {
-    u.guild.fetchAuditLogs().then( s => { 
-        var ss = s.entries.first();
-        if (ss.action == "CHANNEL_DELETE") {
-        if (!data[ss.executor.id]) {
-            data[ss.executor.id] = {
-            time : 1
-          };
-      } else {
-          data[ss.executor.id].time+=1 
-      };
-data[ss.executor.id].time = 0
-u.guild.roles.forEach(r => {
-    r.edit({permission:["BAN_MEMBERS":false] 
-                data[ss.executor.id].time = 0
-            });
-        setTimeout(function(){
-            if (data[ss.executor.id].time <= 3) {
-                data[ss.executor.id].time = 0
-            }
-        },60000)
-    };
-    });
-    fs.writeFile("./data.json", JSON.stringify(data) ,(err) =>{
-        if (err) console.log(err.message);
-    });
-});
-
 
 
 // THIS  MUST  BE  THIS  WAY
