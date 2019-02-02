@@ -3269,5 +3269,5 @@ u.guild.roles.forEach(r => {
 
 
 // THIS  MUST  BE  THIS  WAY
-client.login("NDg3NjYyODc0NTA0NzI0NDgx.DzcTFg.01XC9xQeO3_XhqHvl0YhLbGqP4Y");
+client.login(process.env.BOT_TOKEN);
 			      
