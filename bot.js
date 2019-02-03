@@ -30,7 +30,7 @@ const sql = require("sqlite");
 
 client.on("message", message => {
 	var prefix = "-";
- if (message.content === "-help")(") {
+ if (message.content === "-help") {
   const embed = new Discord.RichEmbed() 
       .setColor("#000000") 
       .setDescription(`
@@ -135,65 +135,7 @@ client.on('message', message => {
   
   
   
-   client.on("message", message => {
-    if (message.content === "-help--1") {
-     const embed = new Discord.RichEmbed() 
-         .setThumbnail(message.author.avatarURL)
-         .setColor("#00FF00")
-         .setDescription(`**  السيرفر الرسمي للبوت :  :dove:  https://discord.gg/TZ3dcyC :scroll:
-         :hearts: الموقع الرسمي للبوت https://aboodealnaimat.wixsite.com/Repos system: website here  :hearts: **`)
-   message.author.sendEmbed(embed)
    
-   }
-   });
-  
-   client.on("message", message => {
-    if (message.content === "-help-a") {
-     const embed = new Discord.RichEmbed() 
-         .setThumbnail(message.author.avatarURL)
-         .setColor("#00FF00")
-         .setDescription(`**  السيرفر الرسمي للبوت :  :dove:  https://discord.gg/TZ3dcyC :scroll:
-         :hearts: الموقع الرسمي للبوت https://aboodealnaimat.wixsite.com/Repos system: website here  :hearts: **`)
-   message.author.sendEmbed(embed)
-   
-   }
-   });
-  
-     client.on("message", message => {
-    if (message.content === "-help-p") {
-     const embed = new Discord.RichEmbed() 
-         .setThumbnail(message.author.avatarURL)
-         .setColor("#00FF00")
-         .setDescription(`**  السيرفر الرسمي للبوت :  :dove:  https://discord.gg/TZ3dcyC :scroll:
-         :hearts: الموقع الرسمي للبوت https://aboodealnaimat.wixsite.com/Repos system: website here  :hearts: **`)
-   message.author.sendEmbed(embed)
-   
-   }
-   });
-  
-      client.on("message", message => {
-    if (message.content === "-help-g") {
-     const embed = new Discord.RichEmbed() 
-         .setThumbnail(message.author.avatarURL)
-         .setColor("#00FF00")
-         .setDescription(`**  السيرفر الرسمي للبوت :  :dove:  https://discord.gg/TZ3dcyC :scroll:
-         :hearts: الموقع الرسمي للبوت https://aboodealnaimat.wixsite.com/Repos system: website here  :hearts: **`)
-   message.author.sendEmbed(embed)
-   
-   }
-   });
-  
-   client.on("message", message => {
-    if (message.content === "-help-m") {
-     const embed = new Discord.RichEmbed() 
-         .setThumbnail(message.author.avatarURL)
-         .setColor("#00FF00")
-         .setDescription(`**  السيرفر الرسمي للبوت :  :dove:  https://discord.gg/TZ3dcyC :scroll:
-         :hearts: الموقع الرسمي للبوت https://aboodealnaimat.wixsite.com/Repos system: website here  :hearts: **`)
-   message.author.sendEmbed(embed)
-   
-   }
-   });
   
      client.on("message", message => {
       if (message.content === "-help-a") {
