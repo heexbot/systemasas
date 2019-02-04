@@ -2561,7 +2561,7 @@ client.on('message', message => {
 });
 
 const Canvas = require("canvas"); //npm i canvas
-let profile = JSON.parse(fs.readFileSync("profile.json", "utf8"))
+let profile = JSON.parse(fs.readFileSync("credits.json", "utf8"))
 client.on("message", message => {
  
   if (message.author.bot) return;
